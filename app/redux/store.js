@@ -1,7 +1,7 @@
-import redux from 'redux';
-import { createStore } from 'redux';
-// import reducers from './reducers';
+import redux, { createStore, applyMiddleware } from 'redux';
+import { photoReducer } from './reducers';
+import thunk from 'redux-thunk'
 
-// var store = createStore();
+var store = createStore(photoReducer, applyMiddleware(thunk));
 
-// export default store;
+export default store;

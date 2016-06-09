@@ -10,7 +10,6 @@ const parts = require('./lib/parts');
 const PATHS = {
   app: path.join(__dirname, 'app'),
   style: [
-    path.join(__dirname, 'node_modules', 'purecss'),
     path.join(__dirname, 'app', './sass/main.scss')
   ],
   build: path.join(__dirname, 'build')

@@ -1,9 +1,9 @@
 {
-  "name": "test-name",
+  "name": "face-recog",
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "setup:react": "rm -fr .git && npm i && git init && git add . && git commit -m \"Initial Commit\" && hub create && git push origin master && atom . && npm start",
@@ -13,11 +13,13 @@
     "stats": "webpack --profile --json > stats.json"
   },
   "babel": {
-    "presets": ["es2015", "react"]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "keywords": [],
   "author": "Simon Attfield",
-  "license": "ISC",
   "devDependencies": {
     "autoprefixer": ">=6.3.6",
     "babel-core": ">=6.8.0",
@@ -33,7 +35,6 @@
     "mocha": ">=2.4.5",
     "node-sass": ">=3.7.0",
     "postcss-loader": ">=0.9.1",
-    "purecss": ">=0.6.0",
     "purifycss-webpack-plugin": ">=2.0.3",
     "react-addons-test-utils": ">=15.0.2",
     "sass-loader": ">=3.2.0",
@@ -44,10 +45,12 @@
     "webpack-validator": ">=1.8.0"
   },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "react": ">=15.0.2",
     "react-addons-update": ">=15.0.2",
     "react-dom": ">=15.0.2",
     "react-redux": ">=4.4.5",
-    "redux": ">=3.5.2"
+    "redux": ">=3.5.2",
+    "redux-thunk": "^2.1.0"
   }
 }
