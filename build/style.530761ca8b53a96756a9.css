@@ -1,0 +1,13 @@
+.pure-button {
+  background-color: orange;
+  font-size: 3em;
+  margin: 2em auto;
+  border-radius: 30px;
+}
+
+body {
+  background: #6495ed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/*# sourceMappingURL=style.530761ca8b53a96756a9.css.map*/

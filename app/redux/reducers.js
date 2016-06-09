@@ -9,7 +9,7 @@ export function photoReducer(state = {}, action) {
   console.log(action);
   switch (action.type) {
     case 'ADDED_PHOTO':
-      let newState = update(state, {$set: {url: action.url.target.result}});
+      let newState = update(state, {$set: {url: action.url}});
       return newState;
       break;
     default:
